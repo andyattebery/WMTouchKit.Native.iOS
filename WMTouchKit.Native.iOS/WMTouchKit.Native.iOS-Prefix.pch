@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'WMTouchKit.Native.iOS' target in the 'WMTouchKit.Native.iOS' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif
