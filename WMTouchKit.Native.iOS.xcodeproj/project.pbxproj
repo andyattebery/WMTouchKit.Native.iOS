@@ -8,8 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		16741F3A177D020F00A672D9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16741F39177D020F00A672D9 /* Foundation.framework */; };
-		16741F3F177D020F00A672D9 /* WMTouchKit_Native_iOS.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 16741F3E177D020F00A672D9 /* WMTouchKit_Native_iOS.h */; };
-		16741F41177D020F00A672D9 /* WMTouchKit_Native_iOS.m in Sources */ = {isa = PBXBuildFile; fileRef = 16741F40177D020F00A672D9 /* WMTouchKit_Native_iOS.m */; };
+		16741F5A177D029500A672D9 /* WMWrapperViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16741F4F177D029500A672D9 /* WMWrapperViewController.m */; };
+		16741F5B177D029500A672D9 /* WMDocumentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16741F52177D029500A672D9 /* WMDocumentViewController.m */; };
+		16741F5C177D029500A672D9 /* WMBaseWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16741F55177D029500A672D9 /* WMBaseWebViewController.m */; };
+		16741F5D177D029500A672D9 /* UIColor+Initialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 16741F57177D029500A672D9 /* UIColor+Initialization.m */; };
+		16741F5E177D029500A672D9 /* WMConfigurationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 16741F59177D029500A672D9 /* WMConfigurationManager.m */; };
+		16741F62177D042E00A672D9 /* UIColor+Initialization.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 16741F56177D029500A672D9 /* UIColor+Initialization.h */; };
+		16741F63177D042E00A672D9 /* WMConfigurationManager.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 16741F58177D029500A672D9 /* WMConfigurationManager.h */; };
+		16741F64177D042E00A672D9 /* WMBaseWebViewController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 16741F54177D029500A672D9 /* WMBaseWebViewController.h */; };
+		16741F65177D042E00A672D9 /* WMDocumentViewController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 16741F51177D029500A672D9 /* WMDocumentViewController.h */; };
+		16741F66177D042E00A672D9 /* WMWrapperViewController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 16741F4E177D029500A672D9 /* WMWrapperViewController.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -19,7 +27,11 @@
 			dstPath = "include/${PRODUCT_NAME}";
 			dstSubfolderSpec = 16;
 			files = (
-				16741F3F177D020F00A672D9 /* WMTouchKit_Native_iOS.h in CopyFiles */,
+				16741F62177D042E00A672D9 /* UIColor+Initialization.h in CopyFiles */,
+				16741F63177D042E00A672D9 /* WMConfigurationManager.h in CopyFiles */,
+				16741F64177D042E00A672D9 /* WMBaseWebViewController.h in CopyFiles */,
+				16741F65177D042E00A672D9 /* WMDocumentViewController.h in CopyFiles */,
+				16741F66177D042E00A672D9 /* WMWrapperViewController.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -29,8 +41,18 @@
 		16741F36177D020F00A672D9 /* libWMTouchKit.Native.iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libWMTouchKit.Native.iOS.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		16741F39177D020F00A672D9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		16741F3D177D020F00A672D9 /* WMTouchKit.Native.iOS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WMTouchKit.Native.iOS-Prefix.pch"; sourceTree = "<group>"; };
-		16741F3E177D020F00A672D9 /* WMTouchKit_Native_iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WMTouchKit_Native_iOS.h; sourceTree = "<group>"; };
-		16741F40177D020F00A672D9 /* WMTouchKit_Native_iOS.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WMTouchKit_Native_iOS.m; sourceTree = "<group>"; };
+		16741F4E177D029500A672D9 /* WMWrapperViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = WMWrapperViewController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		16741F4F177D029500A672D9 /* WMWrapperViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = WMWrapperViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		16741F50177D029500A672D9 /* WMWrapperViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WMWrapperViewController.xib; sourceTree = "<group>"; };
+		16741F51177D029500A672D9 /* WMDocumentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = WMDocumentViewController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		16741F52177D029500A672D9 /* WMDocumentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = WMDocumentViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		16741F53177D029500A672D9 /* WMDocumentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WMDocumentViewController.xib; sourceTree = "<group>"; };
+		16741F54177D029500A672D9 /* WMBaseWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = WMBaseWebViewController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		16741F55177D029500A672D9 /* WMBaseWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = WMBaseWebViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		16741F56177D029500A672D9 /* UIColor+Initialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = "UIColor+Initialization.h"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		16741F57177D029500A672D9 /* UIColor+Initialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = "UIColor+Initialization.m"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		16741F58177D029500A672D9 /* WMConfigurationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = WMConfigurationManager.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		16741F59177D029500A672D9 /* WMConfigurationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = WMConfigurationManager.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,9 +95,10 @@
 		16741F3B177D020F00A672D9 /* WMTouchKit.Native.iOS */ = {
 			isa = PBXGroup;
 			children = (
-				16741F3E177D020F00A672D9 /* WMTouchKit_Native_iOS.h */,
-				16741F40177D020F00A672D9 /* WMTouchKit_Native_iOS.m */,
+				16741F60177D02DA00A672D9 /* Categories */,
+				16741F61177D02EC00A672D9 /* Managers */,
 				16741F3C177D020F00A672D9 /* Supporting Files */,
+				16741F5F177D02A700A672D9 /* View Controllers */,
 			);
 			path = WMTouchKit.Native.iOS;
 			sourceTree = "<group>";
@@ -86,6 +109,39 @@
 				16741F3D177D020F00A672D9 /* WMTouchKit.Native.iOS-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		16741F5F177D02A700A672D9 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				16741F54177D029500A672D9 /* WMBaseWebViewController.h */,
+				16741F55177D029500A672D9 /* WMBaseWebViewController.m */,
+				16741F51177D029500A672D9 /* WMDocumentViewController.h */,
+				16741F52177D029500A672D9 /* WMDocumentViewController.m */,
+				16741F53177D029500A672D9 /* WMDocumentViewController.xib */,
+				16741F4E177D029500A672D9 /* WMWrapperViewController.h */,
+				16741F4F177D029500A672D9 /* WMWrapperViewController.m */,
+				16741F50177D029500A672D9 /* WMWrapperViewController.xib */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		16741F60177D02DA00A672D9 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				16741F56177D029500A672D9 /* UIColor+Initialization.h */,
+				16741F57177D029500A672D9 /* UIColor+Initialization.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		16741F61177D02EC00A672D9 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				16741F58177D029500A672D9 /* WMConfigurationManager.h */,
+				16741F59177D029500A672D9 /* WMConfigurationManager.m */,
+			);
+			name = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,7 +195,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				16741F41177D020F00A672D9 /* WMTouchKit_Native_iOS.m in Sources */,
+				16741F5A177D029500A672D9 /* WMWrapperViewController.m in Sources */,
+				16741F5B177D029500A672D9 /* WMDocumentViewController.m in Sources */,
+				16741F5C177D029500A672D9 /* WMBaseWebViewController.m in Sources */,
+				16741F5D177D029500A672D9 /* UIColor+Initialization.m in Sources */,
+				16741F5E177D029500A672D9 /* WMConfigurationManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,6 +302,7 @@
 				16741F46177D020F00A672D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,13 +1,15 @@
 //
-//  WMTouchKit_Native_iOS.h
+//  UIColor+Initialization.h
 //  WMTouchKit.Native.iOS
 //
 //  Created by Andy Attebery on 6/27/13.
 //  Copyright (c) 2013 West Monroe Partners. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
-@interface WMTouchKit_Native_iOS : NSObject
+@interface UIColor (Initialization)
+
++ (UIColor*) colorWithHexCode:(int)code;
 
 @end
