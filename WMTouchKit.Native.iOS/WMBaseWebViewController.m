@@ -8,10 +8,6 @@
 
 #import "WMBaseWebViewController.h"
 
-@interface WMBaseWebViewController ()
-
-@end
-
 @implementation WMBaseWebViewController
 
 @synthesize webView;

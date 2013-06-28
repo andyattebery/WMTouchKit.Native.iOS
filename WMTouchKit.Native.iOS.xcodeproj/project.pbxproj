@@ -53,6 +53,7 @@
 		16741F57177D029500A672D9 /* UIColor+Initialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = "UIColor+Initialization.m"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		16741F58177D029500A672D9 /* WMConfigurationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = WMConfigurationManager.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		16741F59177D029500A672D9 /* WMConfigurationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = WMConfigurationManager.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		16741F7F177D07DB00A672D9 /* Readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Readme.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +100,7 @@
 				16741F61177D02EC00A672D9 /* Managers */,
 				16741F3C177D020F00A672D9 /* Supporting Files */,
 				16741F5F177D02A700A672D9 /* View Controllers */,
+				16741F7F177D07DB00A672D9 /* Readme.md */,
 			);
 			path = WMTouchKit.Native.iOS;
 			sourceTree = "<group>";

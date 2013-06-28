@@ -73,7 +73,13 @@ static NSString *const SecondaryColorKey = @"WMSecondaryColor";
         // Ex. aspmobile://documents/
         if ([WMConfigurationManager hasInfoPlistKey:WrapperDocumentURLEndpointKey])
         {
-            NSString *documentsURLPrefix = [[WMConfigurationManager getInfoPlistObjectForKey:WrapperApplicationURLSchemeKey] stringByAppendingString:[WMConfigurationManager getInfoPlistObjectForKey:WrapperDocumentURLEndpointKey]];
+            NSString *documentsURLEndpoint = [WMConfigurationManager getInfoPlistObjectForKey:WrapperDocumentURLEndpointKey];
+            if (![documentsURLEndpoint hasSuffix:@"/"])
+            {
+                documentsURLEndpoint = [documentsURLEndpoint stringByAppendingString:@"/"];
+            }
+            
+            NSString *documentsURLPrefix = [[WMConfigurationManager getInfoPlistObjectForKey:WrapperApplicationURLSchemeKey] stringByAppendingString:documentsURLEndpoint];
             if ([urlString hasPrefix:documentsURLPrefix])
             {
                 NSString *documentURL = [urlString stringByReplacingOccurrencesOfString:documentsURLPrefix withString:self.baseURL];
